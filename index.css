@@ -2,16 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Finger Paint', cursive;
 }
 
-#accountForm
-{
+body {
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 label, input {
     display: block;
@@ -28,15 +32,16 @@ label {
 
 h1 
     {
-        padding: 10px;
+        padding: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: orange;
+        font-family: 'Finger Paint', cursive;
         }
-
         
-        #submit {
+#submit {
             padding: 3% 10px;
             border-radius: 100px;
             background-color: orange;
@@ -51,3 +56,11 @@ h1
             cursor: pointer;
             transform: translateY(-2px);
 }
+
+#avatarInput {
+
+    border-radius: 10%;
+    max-width: 100px;
+    height: auto;
+}
+
