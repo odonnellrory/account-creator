@@ -6,6 +6,8 @@
     font-family: 'Finger Paint', cursive;
 }
 
+
+
 body {
     padding: 100px;
     display: flex;
@@ -16,30 +18,49 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-label, input {
-    display: block;
-    margin-bottom: 20px;
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    color: rgb(0, 182, 253);
 }
 
 label {
+    display: block;
     margin-bottom: 5px;
+    font-weight: 600;
+    color: rgb(0, 182, 253);
 }
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 1s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: orange;
+}
+
 #error {
     color: rgb(255, 0, 0);
     font-family: 'Finger Paint', cursive;
 }
 
-h1 
-    {
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: orange;
-        font-family: 'Finger Paint', cursive;
-        }
+h1 {
+    font-family: 'Finger Paint', cursive;
+    color: orange;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
         
 #submit {
             padding: 3% 10px;
@@ -50,17 +71,26 @@ h1
             font-size: 15px;
             transition: 200ms transform;
             font-weight: 600;
+            margin-top: 20px;
         }
         
-        button:hover {
-            cursor: pointer;
-            transform: translateY(-2px);
+    button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
 }
 
 #avatarInput {
-
-    border-radius: 50%;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 5px solid orange;
+    transition: transform 2s ease;
+}
+
+#avatarInput:hover {
+    transform: scale(3.05) rotate(360deg);
 }
 
