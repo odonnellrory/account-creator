@@ -1,25 +1,53 @@
-#account-form
-    {
-    padding: 400px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#accountForm
+{
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #37505C;}
-
-
-#submit {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: orange;
-    color: #333;
-    border-color: orange;
-    font-size: 18px;
-    transition: 200ms transform;
-    font-weight: 600;
 }
 
-button:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
+label, input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+#error {
+    color: rgb(255, 0, 0);
+    font-family: 'Finger Paint', cursive;
+}
+
+h1 
+    {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+
+        
+        #submit {
+            padding: 3% 10px;
+            border-radius: 100px;
+            background-color: orange;
+            color: #333;
+            border-color: orange;
+            font-size: 15px;
+            transition: 200ms transform;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            cursor: pointer;
+            transform: translateY(-2px);
 }
